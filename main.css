@@ -1,0 +1,258 @@
+/*****************************
+  BODY
+*/
+html body {
+  font-family: 'Montserrat', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.background-slice {
+  background-color: #f6f9fc;
+  height: 100%;
+  left: -25%;
+  position: absolute;
+  width: 150%;
+}
+
+/*****************************
+  NAV
+*/
+.navbar {
+  z-index: 2;
+}
+
+.navbar.fixed-top {
+  transform: translateY(-60px);
+}
+
+.navbar.is-transitioning {
+  transition: .2s ease-out all;
+}
+
+.navbar.fixed-top.fixed-top-sticky {
+  transform: translateY(0);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition: .2s ease-out all;
+}
+
+.navbar-spacer {
+  display: none;
+  height: 3.5rem;
+}
+
+.navbar.fixed-top + .navbar-spacer {
+  display: block;
+}
+
+/*****************************
+  HERO
+*/
+.hero-container {
+  margin-bottom: 5rem;
+}
+
+.hero-container .background-slice {
+  bottom: 0;
+  height: 150%;
+  transform: rotate(-8deg);
+}
+
+.hero-container .row {
+  min-height: 100vh;
+}
+
+.hero-container .hero-heading-separator {
+  background-color: #292b2c;
+  border-radius: 2px;
+  height: 4px;
+  width: 60px;
+}
+
+.hero-container p {
+  font-size: 1.25rem;
+}
+
+.hero-img {
+  background-image: url('https://images.apple.com/v/iphone-se/c/images/overview/silver_iphone_design_large_2x.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 560px;
+}
+
+/*****************************
+  ABOUT
+*/
+.about-container {
+  margin-bottom: 5rem;
+}
+
+.accordion .card {
+  border: none;
+  border-radius: 0;
+}
+
+.accordion .card .card-header {
+  background-color: transparent;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.accordion .card .card-header a {
+  color: #99979C;
+  display: block;
+}
+
+.accordion .card .card-header a i {
+  font-size: 2rem;
+  line-height: .75;
+  transition: .2s ease-out transform;
+  transform: rotate(180deg);
+}
+
+.accordion .card .card-header a.collapsed i {
+  transform: rotate(0);
+}
+
+.accordion .card .card-block {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*****************************
+  WORK
+*/
+.work-container {
+  margin-bottom: 5rem;
+}
+
+.work-container .background-slice {
+  top: 0;
+  transform: rotate(10deg);
+}
+
+.work-hero-img {
+  background-image: url('https://images.apple.com/v/iphone-se/c/images/overview/hero_space_grey_large_2x.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 400px;
+}
+
+.case-study-card {
+  margin-bottom: 1.5rem;
+  transition: .2s ease-out all;
+}
+
+.case-study-card .case-study-card-img {
+  background-image: url('https://images.apple.com/v/iphone-se/c/images/overview/hero_space_grey_large_2x.png');
+  background-position: 20% center;
+  background-repeat: no-repeat;
+  height: 220px;
+  margin-bottom: 0;
+}
+
+.case-study-card .card-img-overlay {
+  align-items: center;
+  background-color: rgba(0, 0, 0, .6);
+  border-radius: .1875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: .2s ease-out all;
+}
+
+.case-study-card:hover {
+  box-shadow: 0 7px 20px rgba(0, 0, 0, .2);
+  transform: translateY(-3px);
+}
+
+.case-study-card:hover .card-img-overlay {
+  background-color: rgba(0, 0, 0, .4);
+}
+
+/*****************************
+  READING
+*/
+.reading-container {
+  margin-bottom: 5rem;
+}
+
+.book-card {
+  display: inline-block;
+  width: 16rem;
+}
+
+.book-card-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 360px;
+  margin-bottom: 0;
+}
+
+/*****************************
+  CONTACT
+*/
+.contact-container {
+  margin-bottom: 5rem;
+}
+
+.contact-container .background-slice {
+  height: 105%;
+  top: 0;
+  transform: rotate(2deg);
+}
+
+/*****************************
+  UTILITIES
+*/
+.fs-3 {
+  font-size: 3rem;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+button, .btn, a {
+  cursor: pointer;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-white {
+  background-color: #FFF;
+}
+
+.bs-2-15 {
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+}
+
+h1 > small,
+h2 > small,
+h3 > small,
+h4 > small,
+h5 > small,
+h6 > small {
+  font-size: 70%;
+  font-weight: 300;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.spacer {
+  height: 1px;
+}
